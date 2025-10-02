@@ -1,7 +1,32 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { detectXml } from "@file-type/xml";
+import { FileTypeParser } from "file-type";
 import { FILE_SIZE_UNITS } from "../constants.js";
 import type { BaseFileMetadata } from "../types.js";
+
+const fallbackMimeTypes: Record<string, string> = {
+	xls: "application/vnd.ms-excel",
+	ppt: "application/vnd.ms-powerpoint",
+	doc: "application/msword",
+	csv: "text/csv",
+	tsv: "text/tab-separated-values",
+};
+
+export async function detectMimeType(filepath: string): Promise<string | null> {
+	const extension = getFileExtension(filepath);
+	const mimeFromExtension = fallbackMimeTypes[extension];
+	if (mimeFromExtension) {
+		return mimeFromExtension;
+	}
+	try {
+		const fileTypeParser = new FileTypeParser({ customDetectors: [detectXml] });
+		const res = await fileTypeParser.fromFile(filepath);
+		return res?.mime || null;
+	} catch {
+		return null;
+	}
+}
 
 export async function getFileStats(
 	filepath: string,
