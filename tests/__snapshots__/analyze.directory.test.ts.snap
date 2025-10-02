@@ -1,0 +1,174 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Directory analysis > analyzes images directory (non-recursive) and snapshots specific metadata list 1`] = `
+[
+  {
+    "filename": "animated.gif",
+    "specific": {
+      "aspectRatio": "79:80",
+      "bitDepth": NaN,
+      "colorSpace": "srgb",
+      "format": "GIF",
+      "hasAlpha": false,
+      "height": 80,
+      "resolution": "79x80",
+      "width": 79,
+    },
+  },
+  {
+    "filename": "image.svg",
+    "specific": {
+      "characterCount": 10009,
+      "encoding": "utf-8",
+      "isEmpty": false,
+      "lineCount": 69,
+      "wordCount": 642,
+    },
+  },
+  {
+    "filename": "progressive.jpg",
+    "specific": {
+      "aspectRatio": "341:486",
+      "bitDepth": NaN,
+      "colorSpace": "srgb",
+      "format": "JPEG",
+      "hasAlpha": false,
+      "height": 486,
+      "resolution": "341x486",
+      "width": 341,
+    },
+  },
+  {
+    "filename": "sample.gif",
+    "specific": {
+      "aspectRatio": "1:1",
+      "bitDepth": NaN,
+      "colorSpace": "srgb",
+      "format": "GIF",
+      "hasAlpha": false,
+      "height": 250,
+      "resolution": "250x250",
+      "width": 250,
+    },
+  },
+  {
+    "filename": "sample.jpg",
+    "specific": {
+      "aspectRatio": "218:271",
+      "bitDepth": NaN,
+      "colorSpace": "srgb",
+      "format": "JPEG",
+      "hasAlpha": false,
+      "height": 271,
+      "resolution": "218x271",
+      "width": 218,
+    },
+  },
+  {
+    "filename": "sample.png",
+    "specific": {
+      "aspectRatio": "4:3",
+      "bitDepth": NaN,
+      "colorSpace": "srgb",
+      "format": "PNG",
+      "hasAlpha": true,
+      "height": 150,
+      "resolution": "200x150",
+      "width": 200,
+    },
+  },
+  {
+    "filename": "sample.tiff",
+    "specific": {
+      "aspectRatio": "199:47",
+      "bitDepth": NaN,
+      "colorSpace": "srgb",
+      "format": "TIFF",
+      "hasAlpha": true,
+      "height": 47,
+      "resolution": "199x47",
+      "width": 199,
+    },
+  },
+  {
+    "filename": "sample.webp",
+    "specific": {
+      "aspectRatio": "275:184",
+      "bitDepth": NaN,
+      "colorSpace": "srgb",
+      "format": "WEBP",
+      "hasAlpha": false,
+      "height": 368,
+      "resolution": "550x368",
+      "width": 550,
+    },
+  },
+]
+`;
+
+exports[`Directory analysis > analyzes text directory and snapshots metadata list 1`] = `
+[
+  {
+    "filename": "sample.dat",
+    "specific": {
+      "characterCount": 71,
+      "characterCountNoSpaces": 56,
+      "hasImages": false,
+      "hasTables": false,
+      "lineCount": 3,
+      "pageCount": undefined,
+      "paragraphCount": undefined,
+      "wordCount": 16,
+    },
+  },
+  {
+    "filename": "sample.json",
+    "specific": {
+      "characterCount": 606,
+      "characterCountNoSpaces": 296,
+      "hasImages": false,
+      "hasTables": false,
+      "lineCount": 31,
+      "pageCount": undefined,
+      "paragraphCount": undefined,
+      "wordCount": 31,
+    },
+  },
+  {
+    "filename": "sample.txt",
+    "specific": {
+      "characterCount": 42,
+      "characterCountNoSpaces": 33,
+      "hasImages": false,
+      "hasTables": false,
+      "lineCount": 2,
+      "pageCount": undefined,
+      "paragraphCount": undefined,
+      "wordCount": 10,
+    },
+  },
+  {
+    "filename": "sample.xml",
+    "specific": {
+      "characterCount": 4430,
+      "encoding": "utf-8",
+      "isEmpty": false,
+      "lineCount": 120,
+      "wordCount": 336,
+    },
+  },
+  {
+    "filename": "sample.xsd",
+    "specific": {
+      "characterCount": 913,
+      "characterCountNoSpaces": 621,
+      "hasImages": false,
+      "hasTables": false,
+      "lineCount": 23,
+      "pageCount": undefined,
+      "paragraphCount": undefined,
+      "wordCount": 40,
+    },
+  },
+]
+`;

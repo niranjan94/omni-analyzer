@@ -1,0 +1,101 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TextAnalyzer > TextAnalyzer: analyzes file sample.dat (undefined} 1`] = `
+{
+  "characterCount": 72,
+  "encoding": "utf-8",
+  "isEmpty": false,
+  "lineCount": 3,
+  "wordCount": 16,
+}
+`;
+
+exports[`TextAnalyzer > TextAnalyzer: analyzes file sample.dat 1`] = `
+{
+  "characterCount": 72,
+  "encoding": "utf-8",
+  "isEmpty": false,
+  "lineCount": 3,
+  "wordCount": 16,
+}
+`;
+
+exports[`TextAnalyzer > TextAnalyzer: analyzes file sample.json (undefined} 1`] = `
+{
+  "characterCount": 607,
+  "encoding": "utf-8",
+  "isEmpty": false,
+  "lineCount": 31,
+  "wordCount": 31,
+}
+`;
+
+exports[`TextAnalyzer > TextAnalyzer: analyzes file sample.json 1`] = `
+{
+  "characterCount": 607,
+  "encoding": "utf-8",
+  "isEmpty": false,
+  "lineCount": 31,
+  "wordCount": 31,
+}
+`;
+
+exports[`TextAnalyzer > TextAnalyzer: analyzes file sample.txt (undefined} 1`] = `
+{
+  "characterCount": 43,
+  "encoding": "utf-8",
+  "isEmpty": false,
+  "lineCount": 2,
+  "wordCount": 10,
+}
+`;
+
+exports[`TextAnalyzer > TextAnalyzer: analyzes file sample.txt 1`] = `
+{
+  "characterCount": 43,
+  "encoding": "utf-8",
+  "isEmpty": false,
+  "lineCount": 2,
+  "wordCount": 10,
+}
+`;
+
+exports[`TextAnalyzer > TextAnalyzer: analyzes file sample.xml (application/xml} 1`] = `
+{
+  "characterCount": 4430,
+  "encoding": "utf-8",
+  "isEmpty": false,
+  "lineCount": 120,
+  "wordCount": 336,
+}
+`;
+
+exports[`TextAnalyzer > TextAnalyzer: analyzes file sample.xml 1`] = `
+{
+  "characterCount": 4430,
+  "encoding": "utf-8",
+  "isEmpty": false,
+  "lineCount": 120,
+  "wordCount": 336,
+}
+`;
+
+exports[`TextAnalyzer > TextAnalyzer: analyzes file sample.xsd (undefined} 1`] = `
+{
+  "characterCount": 914,
+  "encoding": "utf-8",
+  "isEmpty": false,
+  "lineCount": 23,
+  "wordCount": 40,
+}
+`;
+
+exports[`TextAnalyzer > TextAnalyzer: analyzes file sample.xsd 1`] = `
+{
+  "characterCount": 914,
+  "encoding": "utf-8",
+  "isEmpty": false,
+  "lineCount": 23,
+  "wordCount": 40,
+}
+`;

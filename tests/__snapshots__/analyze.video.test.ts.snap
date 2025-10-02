@@ -1,0 +1,145 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.avi (video/vnd.avi} 1`] = `
+{
+  "audioCodec": "mp3",
+  "bitrate": 540558,
+  "codec": "mpeg4",
+  "duration": 5.56,
+  "durationFormatted": "00:00:05",
+  "frameRate": 25,
+  "hasAudio": true,
+  "hasSubtitles": false,
+  "height": 240,
+  "resolution": "320x240",
+  "width": 320,
+}
+`;
+
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.flv (video/x-flv} 1`] = `
+{
+  "audioCodec": "mp3",
+  "bitrate": 436441,
+  "codec": "flv1",
+  "duration": 5.56,
+  "durationFormatted": "00:00:05",
+  "frameRate": 25,
+  "hasAudio": true,
+  "hasSubtitles": false,
+  "height": 240,
+  "resolution": "320x240",
+  "width": 320,
+}
+`;
+
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mkv (video/matroska} 1`] = `
+{
+  "audioCodec": "aac",
+  "bitrate": 598779,
+  "codec": "h264",
+  "duration": 5.57,
+  "durationFormatted": "00:00:05",
+  "frameRate": 30,
+  "hasAudio": true,
+  "hasSubtitles": false,
+  "height": 320,
+  "resolution": "560x320",
+  "width": 560,
+}
+`;
+
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mov (video/quicktime} 1`] = `
+{
+  "audioCodec": "aac",
+  "bitrate": 674841,
+  "codec": "mpeg4",
+  "duration": 5.568005,
+  "durationFormatted": "00:00:05",
+  "frameRate": 30,
+  "hasAudio": true,
+  "hasSubtitles": false,
+  "height": 320,
+  "resolution": "560x320",
+  "width": 560,
+}
+`;
+
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mp4 (video/mp4} 1`] = `
+{
+  "audioCodec": "aac",
+  "bitrate": 551193,
+  "codec": "h264",
+  "duration": 5.568,
+  "durationFormatted": "00:00:05",
+  "frameRate": 30,
+  "hasAudio": true,
+  "hasSubtitles": false,
+  "height": 320,
+  "resolution": "560x320",
+  "width": 560,
+}
+`;
+
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mpg (video/MP1S} 1`] = `
+{
+  "audioCodec": "mp2",
+  "bitrate": 973158,
+  "codec": "mpeg1video",
+  "duration": 5.522178,
+  "durationFormatted": "00:00:05",
+  "frameRate": 29.97,
+  "hasAudio": true,
+  "hasSubtitles": false,
+  "height": 240,
+  "resolution": "352x240",
+  "width": 352,
+}
+`;
+
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.swf (application/x-shockwave-flash} 1`] = `
+{
+  "audioCodec": "mp3",
+  "bitrate": NaN,
+  "codec": "flv1",
+  "duration": NaN,
+  "durationFormatted": "NaN:NaN:NaN",
+  "frameRate": 25,
+  "hasAudio": true,
+  "hasSubtitles": false,
+  "height": 240,
+  "resolution": "320x240",
+  "width": 320,
+}
+`;
+
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.webm (video/webm} 1`] = `
+{
+  "audioCodec": "vorbis",
+  "bitrate": 256678,
+  "codec": "vp8",
+  "duration": 10.501,
+  "durationFormatted": "00:00:10",
+  "frameRate": 1000,
+  "hasAudio": true,
+  "hasSubtitles": false,
+  "height": 360,
+  "resolution": "640x360",
+  "width": 640,
+}
+`;
+
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.wmv (video/x-ms-asf} 1`] = `
+{
+  "audioCodec": "wmav2",
+  "bitrate": 793695,
+  "codec": "wmv2",
+  "duration": 5.587,
+  "durationFormatted": "00:00:05",
+  "frameRate": 30,
+  "hasAudio": true,
+  "hasSubtitles": false,
+  "height": 240,
+  "resolution": "320x240",
+  "width": 320,
+}
+`;

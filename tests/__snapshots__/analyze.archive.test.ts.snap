@@ -1,0 +1,113 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ArchiveAnalyzer > ArchiveAnalyzer: analyzes file sample.tar (application/x-tar} 1`] = `
+{
+  "compressionRatio": 0,
+  "fileCount": 6,
+  "files": [
+    {
+      "compressedSize": 0,
+      "isDirectory": true,
+      "path": "0183905001368214819/",
+      "size": 0,
+    },
+    {
+      "compressedSize": 3163,
+      "isDirectory": false,
+      "path": "0183905001368214819/apple-touch-icon-72-precomposed.png",
+      "size": 3163,
+    },
+    {
+      "compressedSize": 2260,
+      "isDirectory": false,
+      "path": "0183905001368214819/apple-touch-icon-57-precomposed.png",
+      "size": 2260,
+    },
+    {
+      "compressedSize": 0,
+      "isDirectory": true,
+      "path": "0183905001368214819/__MACOSX/",
+      "size": 0,
+    },
+    {
+      "compressedSize": 6043,
+      "isDirectory": false,
+      "path": "0183905001368214819/apple-touch-icon-114-precomposed.png",
+      "size": 6043,
+    },
+    {
+      "compressedSize": 546,
+      "isDirectory": false,
+      "path": "0183905001368214819/__MACOSX/._apple-touch-icon-72-precomposed.png",
+      "size": 546,
+    },
+    {
+      "compressedSize": 546,
+      "isDirectory": false,
+      "path": "0183905001368214819/__MACOSX/._apple-touch-icon-57-precomposed.png",
+      "size": 546,
+    },
+    {
+      "compressedSize": 548,
+      "isDirectory": false,
+      "path": "0183905001368214819/__MACOSX/._apple-touch-icon-114-precomposed.png",
+      "size": 548,
+    },
+  ],
+  "isEncrypted": false,
+  "uncompressedSize": 13106,
+}
+`;
+
+exports[`ArchiveAnalyzer > ArchiveAnalyzer: analyzes file sample.zip (application/zip} 1`] = `
+{
+  "compressionRatio": 0.0884,
+  "fileCount": 6,
+  "files": [
+    {
+      "compressedSize": 5576,
+      "isDirectory": false,
+      "path": "apple-touch-icon-114-precomposed.png",
+      "size": 6043,
+    },
+    {
+      "compressedSize": 0,
+      "isDirectory": true,
+      "path": "__MACOSX/",
+      "size": 0,
+    },
+    {
+      "compressedSize": 316,
+      "isDirectory": false,
+      "path": "__MACOSX/._apple-touch-icon-114-precomposed.png",
+      "size": 548,
+    },
+    {
+      "compressedSize": 2265,
+      "isDirectory": false,
+      "path": "apple-touch-icon-57-precomposed.png",
+      "size": 2260,
+    },
+    {
+      "compressedSize": 311,
+      "isDirectory": false,
+      "path": "__MACOSX/._apple-touch-icon-57-precomposed.png",
+      "size": 546,
+    },
+    {
+      "compressedSize": 3168,
+      "isDirectory": false,
+      "path": "apple-touch-icon-72-precomposed.png",
+      "size": 3163,
+    },
+    {
+      "compressedSize": 311,
+      "isDirectory": false,
+      "path": "__MACOSX/._apple-touch-icon-72-precomposed.png",
+      "size": 546,
+    },
+  ],
+  "isEncrypted": true,
+  "uncompressedSize": 13106,
+}
+`;

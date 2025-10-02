@@ -1,0 +1,113 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.aac 1`] = `
+{
+  "album": undefined,
+  "artist": undefined,
+  "bitrate": 78994.25,
+  "channels": 2,
+  "codec": "AAC",
+  "duration": 3.4133333333333336,
+  "durationFormatted": "00:00:03",
+  "sampleRate": 44100,
+  "title": undefined,
+}
+`;
+
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.aiff 1`] = `
+{
+  "album": undefined,
+  "artist": undefined,
+  "bitrate": 176418.82704519984,
+  "channels": 1,
+  "codec": "PCM",
+  "duration": 3.3993650793650794,
+  "durationFormatted": "00:00:03",
+  "sampleRate": 11025,
+  "title": undefined,
+}
+`;
+
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.flac 1`] = `
+{
+  "album": undefined,
+  "artist": undefined,
+  "bitrate": 141577.02652222637,
+  "channels": 1,
+  "codec": "FLAC",
+  "duration": 3.3993650793650794,
+  "durationFormatted": "00:00:03",
+  "sampleRate": 11025,
+  "title": undefined,
+}
+`;
+
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.mka 1`] = `
+{
+  "album": undefined,
+  "artist": undefined,
+  "bitrate": 0,
+  "channels": 2,
+  "codec": "MPEG/L2",
+  "duration": 3.422,
+  "durationFormatted": "00:00:03",
+  "sampleRate": 44100,
+  "title": undefined,
+}
+`;
+
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.mp3 1`] = `
+{
+  "album": undefined,
+  "artist": undefined,
+  "bitrate": 128000,
+  "channels": 2,
+  "codec": "MPEG 1 Layer 3",
+  "duration": 3.4481632653061225,
+  "durationFormatted": "00:00:03",
+  "sampleRate": 44100,
+  "title": undefined,
+}
+`;
+
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.ogg 1`] = `
+{
+  "album": undefined,
+  "artist": undefined,
+  "bitrate": 0,
+  "channels": 2,
+  "codec": "FLAC",
+  "duration": 0,
+  "durationFormatted": "00:00:00",
+  "sampleRate": 44100,
+  "title": undefined,
+}
+`;
+
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.wav 1`] = `
+{
+  "album": undefined,
+  "artist": undefined,
+  "bitrate": 88200,
+  "channels": 1,
+  "codec": "PCM",
+  "duration": 3.3993650793650794,
+  "durationFormatted": "00:00:03",
+  "sampleRate": 11025,
+  "title": undefined,
+}
+`;
+
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.wma 1`] = `
+{
+  "album": undefined,
+  "artist": undefined,
+  "bitrate": 64000,
+  "channels": 0,
+  "codec": "libmp3lame",
+  "duration": 3.552,
+  "durationFormatted": "00:00:03",
+  "sampleRate": 0,
+  "title": undefined,
+}
+`;

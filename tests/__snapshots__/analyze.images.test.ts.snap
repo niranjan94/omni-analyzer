@@ -1,0 +1,391 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file animated.gif (image/gif} 1`] = `
+{
+  "aspectRatio": "79:80",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "GIF",
+  "hasAlpha": false,
+  "height": 80,
+  "resolution": "79x80",
+  "width": 79,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file animated.gif (image/webp) 1`] = `
+{
+  "aspectRatio": "79:80",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "GIF",
+  "hasAlpha": false,
+  "height": 80,
+  "resolution": "79x80",
+  "width": 79,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file animated.gif 1`] = `
+{
+  "aspectRatio": "79:80",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "GIF",
+  "hasAlpha": false,
+  "height": 80,
+  "resolution": "79x80",
+  "width": 79,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file image.svg (application/xml} 1`] = `
+{
+  "aspectRatio": "1:1",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "SVG",
+  "hasAlpha": true,
+  "height": 600,
+  "resolution": "600x600",
+  "width": 600,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file image.svg (image/svg+xml) 1`] = `
+{
+  "aspectRatio": "1:1",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "SVG",
+  "hasAlpha": true,
+  "height": 600,
+  "resolution": "600x600",
+  "width": 600,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file image.svg (image/svg+xml} 1`] = `
+{
+  "aspectRatio": "1:1",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "SVG",
+  "hasAlpha": true,
+  "height": 600,
+  "resolution": "600x600",
+  "width": 600,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file image.svg 1`] = `
+{
+  "aspectRatio": "1:1",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "SVG",
+  "hasAlpha": true,
+  "height": 600,
+  "resolution": "600x600",
+  "width": 600,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file progressive.jpg (image/gif} 1`] = `
+{
+  "aspectRatio": "341:486",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "JPEG",
+  "hasAlpha": false,
+  "height": 486,
+  "resolution": "341x486",
+  "width": 341,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file progressive.jpg (image/jpeg} 1`] = `
+{
+  "aspectRatio": "341:486",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "JPEG",
+  "hasAlpha": false,
+  "height": 486,
+  "resolution": "341x486",
+  "width": 341,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file progressive.jpg (image/webp) 1`] = `
+{
+  "aspectRatio": "341:486",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "JPEG",
+  "hasAlpha": false,
+  "height": 486,
+  "resolution": "341x486",
+  "width": 341,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file progressive.jpg 1`] = `
+{
+  "aspectRatio": "341:486",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "JPEG",
+  "hasAlpha": false,
+  "height": 486,
+  "resolution": "341x486",
+  "width": 341,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.gif (image/gif} 1`] = `
+{
+  "aspectRatio": "1:1",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "GIF",
+  "hasAlpha": false,
+  "height": 250,
+  "resolution": "250x250",
+  "width": 250,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.gif (image/webp) 1`] = `
+{
+  "aspectRatio": "1:1",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "GIF",
+  "hasAlpha": false,
+  "height": 250,
+  "resolution": "250x250",
+  "width": 250,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.gif 1`] = `
+{
+  "aspectRatio": "1:1",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "GIF",
+  "hasAlpha": false,
+  "height": 250,
+  "resolution": "250x250",
+  "width": 250,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.jpg (image/gif} 1`] = `
+{
+  "aspectRatio": "218:271",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "JPEG",
+  "hasAlpha": false,
+  "height": 271,
+  "resolution": "218x271",
+  "width": 218,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.jpg (image/jpeg} 1`] = `
+{
+  "aspectRatio": "218:271",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "JPEG",
+  "hasAlpha": false,
+  "height": 271,
+  "resolution": "218x271",
+  "width": 218,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.jpg (image/webp) 1`] = `
+{
+  "aspectRatio": "218:271",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "JPEG",
+  "hasAlpha": false,
+  "height": 271,
+  "resolution": "218x271",
+  "width": 218,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.jpg 1`] = `
+{
+  "aspectRatio": "218:271",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "JPEG",
+  "hasAlpha": false,
+  "height": 271,
+  "resolution": "218x271",
+  "width": 218,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.png (image/gif} 1`] = `
+{
+  "aspectRatio": "4:3",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "PNG",
+  "hasAlpha": true,
+  "height": 150,
+  "resolution": "200x150",
+  "width": 200,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.png (image/png} 1`] = `
+{
+  "aspectRatio": "4:3",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "PNG",
+  "hasAlpha": true,
+  "height": 150,
+  "resolution": "200x150",
+  "width": 200,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.png (image/webp) 1`] = `
+{
+  "aspectRatio": "4:3",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "PNG",
+  "hasAlpha": true,
+  "height": 150,
+  "resolution": "200x150",
+  "width": 200,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.png 1`] = `
+{
+  "aspectRatio": "4:3",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "PNG",
+  "hasAlpha": true,
+  "height": 150,
+  "resolution": "200x150",
+  "width": 200,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.tiff (image/gif} 1`] = `
+{
+  "aspectRatio": "199:47",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "TIFF",
+  "hasAlpha": true,
+  "height": 47,
+  "resolution": "199x47",
+  "width": 199,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.tiff (image/tiff} 1`] = `
+{
+  "aspectRatio": "199:47",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "TIFF",
+  "hasAlpha": true,
+  "height": 47,
+  "resolution": "199x47",
+  "width": 199,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.tiff (image/webp) 1`] = `
+{
+  "aspectRatio": "199:47",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "TIFF",
+  "hasAlpha": true,
+  "height": 47,
+  "resolution": "199x47",
+  "width": 199,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.tiff 1`] = `
+{
+  "aspectRatio": "199:47",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "TIFF",
+  "hasAlpha": true,
+  "height": 47,
+  "resolution": "199x47",
+  "width": 199,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.webp (image/gif} 1`] = `
+{
+  "aspectRatio": "275:184",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "WEBP",
+  "hasAlpha": false,
+  "height": 368,
+  "resolution": "550x368",
+  "width": 550,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.webp (image/webp) 1`] = `
+{
+  "aspectRatio": "275:184",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "WEBP",
+  "hasAlpha": false,
+  "height": 368,
+  "resolution": "550x368",
+  "width": 550,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.webp (image/webp} 1`] = `
+{
+  "aspectRatio": "275:184",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "WEBP",
+  "hasAlpha": false,
+  "height": 368,
+  "resolution": "550x368",
+  "width": 550,
+}
+`;
+
+exports[`ImageAnalyzer > ImageAnalyzer: analyzes file sample.webp 1`] = `
+{
+  "aspectRatio": "275:184",
+  "bitDepth": NaN,
+  "colorSpace": "srgb",
+  "format": "WEBP",
+  "hasAlpha": false,
+  "height": 368,
+  "resolution": "550x368",
+  "width": 550,
+}
+`;
