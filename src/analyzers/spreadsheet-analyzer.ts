@@ -1,8 +1,10 @@
-import fs from 'node:fs';
+import * as fs from 'node:fs';
 import path from 'node:path';
+import { Readable } from 'node:stream';
 import csvParser from 'csv-parser';
 import { default as exceljs } from 'exceljs';
 import * as XLSX from 'xlsx';
+import * as cpexcel from 'xlsx/dist/cpexcel.full.mjs';
 import { withTimeout } from '@/utils/async-utils.js';
 import { MIME_CATEGORIES, SIZE_LIMITS } from '../constants.js';
 import type {
@@ -11,6 +13,10 @@ import type {
   SpreadsheetMetadata,
 } from '../types.js';
 import { BaseAnalyzer } from './base-analyzer.js';
+
+XLSX.set_fs(fs);
+XLSX.stream.set_readable(Readable);
+XLSX.set_cptable(cpexcel);
 
 /**
  * A class designed for analyzing spreadsheets, extracting metadata such as the number of rows, columns, sheets,

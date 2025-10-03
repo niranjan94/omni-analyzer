@@ -24,10 +24,10 @@
 		"fluent-ffmpeg": "^2.1.2",
 		"mammoth": "^1.6.0",
 		"music-metadata": "^11.9.0",
-		"pdf-parse": "^2.1.1",
+		"pdf-parse": "^2.1.6",
 		"pdfjs-dist": "^5.4.149",
 		"sharp": "^0.34.4",
-		"xlsx": "^0.18.5",
+		"xlsx": "file:vendor/xlsx-0.20.3.tgz",
 		"yauzl": "^3.1.0"
 	},
 	"devDependencies": {
