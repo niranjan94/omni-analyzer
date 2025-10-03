@@ -1,10 +1,25 @@
 import * as musicMetadata from 'music-metadata';
+import { withTimeout } from '@/utils/async-utils.js';
 import { MIME_CATEGORIES } from '../constants.js';
 import type { AnalyzerOptions, AudioMetadata } from '../types.js';
 import { formatDuration } from '../utils/file-utils.js';
 import { BaseAnalyzer } from './base-analyzer.js';
 
+/**
+ * The `AudioAnalyzer` class is responsible for analyzing audio files and extracting metadata such as
+ * duration, bitrate, sample rate, and other relevant audio information. It also provides a method to
+ * retrieve the supported MIME types for audio files.
+ */
 export class AudioAnalyzer extends BaseAnalyzer {
+  /**
+   * Analyzes the audio file at the specified filepath and extracts metadata.
+   *
+   * @param filepath The path to the audio file to analyze.
+   * @param options Optional configuration options for the analyzer.
+   * @return A promise that resolves to an object containing the audio metadata,
+   *         including duration, formatted duration, bitrate, sample rate, channels, codec,
+   *         artist, title, and album.
+   */
   async analyze(
     filepath: string,
     options?: AnalyzerOptions,
@@ -12,7 +27,7 @@ export class AudioAnalyzer extends BaseAnalyzer {
     await this.validateFile(filepath);
     const merged = { ...this.options, ...options } as Required<AnalyzerOptions>;
 
-    const metadata = await this.withTimeout(
+    const metadata = await withTimeout(
       musicMetadata.parseFile(filepath, { duration: true }),
       merged.timeout,
     );
@@ -35,6 +50,11 @@ export class AudioAnalyzer extends BaseAnalyzer {
     };
   }
 
+  /**
+   * Retrieves the list of supported MIME types for audio.
+   *
+   * @return An array of strings representing the supported MIME types.
+   */
   getSupportedMimeTypes(): string[] {
     return MIME_CATEGORIES.AUDIO as unknown as string[];
   }

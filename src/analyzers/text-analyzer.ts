@@ -4,7 +4,19 @@ import { MIME_CATEGORIES } from '../constants.js';
 import type { AnalyzerOptions, TextMetadata } from '../types.js';
 import { BaseAnalyzer } from './base-analyzer.js';
 
+/**
+ * Extends the functionality of BaseAnalyzer to provide analysis of text files.
+ * Capable of processing and extracting metadata such as line count, word count,
+ * character count, encoding, and empty file status from text files.
+ */
 export class TextAnalyzer extends BaseAnalyzer {
+  /**
+   * Analyzes a given text file to obtain metadata such as line count, word count, character count, and encoding.
+   *
+   * @param filepath The path to the file to analyze.
+   * @param options Optional configurations for the analysis process.
+   * @return A promise that resolves to an object containing analyzed text metadata including line count, word count, character count, encoding, and a flag indicating if the file is empty.
+   */
   async analyze(
     filepath: string,
     options?: AnalyzerOptions,
@@ -55,6 +67,11 @@ export class TextAnalyzer extends BaseAnalyzer {
     };
   }
 
+  /**
+   * Retrieves the list of supported MIME types.
+   *
+   * @return An array of strings representing the supported MIME types.
+   */
   getSupportedMimeTypes(): string[] {
     return MIME_CATEGORIES.TEXT as unknown as string[];
   }
