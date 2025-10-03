@@ -1,97 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file ~$sample.doc (application/msword) 1`] = `
-{
-  "characterCount": 162,
-  "characterCountNoSpaces": 160,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 1,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 3,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file ~$sample.doc (application/x-cfb) 1`] = `
-{
-  "characterCount": 162,
-  "characterCountNoSpaces": 160,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 1,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 3,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file ~$sample.doc (null) 1`] = `
-{
-  "characterCount": 162,
-  "characterCountNoSpaces": 160,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 1,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 3,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file ~$sample.doc 1`] = `
-{
-  "characterCount": 162,
-  "characterCountNoSpaces": 160,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 1,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 3,
-}
-`;
-
 exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.doc (application/msword) 1`] = `
-{
-  "characterCount": 21750,
-  "characterCountNoSpaces": 21414,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 32,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 332,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.doc (application/x-cfb) 1`] = `
-{
-  "characterCount": 21750,
-  "characterCountNoSpaces": 21414,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 32,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 332,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.doc (null) 1`] = `
-{
-  "characterCount": 21750,
-  "characterCountNoSpaces": 21414,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 32,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 332,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.doc 1`] = `
 {
   "characterCount": 21750,
   "characterCountNoSpaces": 21414,
@@ -119,36 +28,6 @@ exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.docx (applica
 }
 `;
 
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.docx (application/x-cfb) 1`] = `
-{
-  "author": undefined,
-  "characterCount": 16,
-  "characterCountNoSpaces": 11,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 3,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "title": undefined,
-  "wordCount": 4,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.docx 1`] = `
-{
-  "author": undefined,
-  "characterCount": 16,
-  "characterCountNoSpaces": 11,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 3,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "title": undefined,
-  "wordCount": 4,
-}
-`;
-
 exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.odp (application/vnd.oasis.opendocument.presentation) 1`] = `
 {
   "characterCount": 15480,
@@ -162,98 +41,7 @@ exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.odp (applicat
 }
 `;
 
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.odp (application/x-cfb) 1`] = `
-{
-  "characterCount": 15480,
-  "characterCountNoSpaces": 15179,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 65,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 293,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.odp 1`] = `
-{
-  "characterCount": 15480,
-  "characterCountNoSpaces": 15179,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 65,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 293,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.ods (application/vnd.oasis.opendocument.spreadsheet) 1`] = `
-{
-  "characterCount": 8776,
-  "characterCountNoSpaces": 8637,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 30,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 133,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.ods (application/x-cfb) 1`] = `
-{
-  "characterCount": 8776,
-  "characterCountNoSpaces": 8637,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 30,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 133,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.ods 1`] = `
-{
-  "characterCount": 8776,
-  "characterCountNoSpaces": 8637,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 30,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 133,
-}
-`;
-
 exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.odt (application/vnd.oasis.opendocument.text) 1`] = `
-{
-  "characterCount": 9439,
-  "characterCountNoSpaces": 9215,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 33,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 221,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.odt (application/x-cfb) 1`] = `
-{
-  "characterCount": 9439,
-  "characterCountNoSpaces": 9215,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 33,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 221,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.odt 1`] = `
 {
   "characterCount": 9439,
   "characterCountNoSpaces": 9215,
@@ -281,36 +69,6 @@ exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.pdf (applicat
 }
 `;
 
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.pdf (application/x-cfb) 1`] = `
-{
-  "author": "Adobe Illustrator CS5",
-  "characterCount": 1,
-  "characterCountNoSpaces": 0,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": undefined,
-  "pageCount": 1,
-  "paragraphCount": undefined,
-  "title": "hat",
-  "wordCount": 0,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.pdf 1`] = `
-{
-  "author": "Adobe Illustrator CS5",
-  "characterCount": 1,
-  "characterCountNoSpaces": 0,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": undefined,
-  "pageCount": 1,
-  "paragraphCount": undefined,
-  "title": "hat",
-  "wordCount": 0,
-}
-`;
-
 exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.ppt (application/vnd.ms-powerpoint) 1`] = `
 {
   "characterCount": 46737,
@@ -324,59 +82,7 @@ exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.ppt (applicat
 }
 `;
 
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.ppt (application/x-cfb) 1`] = `
-{
-  "characterCount": 46737,
-  "characterCountNoSpaces": 45637,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 176,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 1093,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.ppt 1`] = `
-{
-  "characterCount": 46737,
-  "characterCountNoSpaces": 45637,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 176,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 1093,
-}
-`;
-
 exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.pptx (application/vnd.openxmlformats-officedocument.presentationml.presentation) 1`] = `
-{
-  "characterCount": 36093,
-  "characterCountNoSpaces": 35307,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 205,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 770,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.pptx (application/x-cfb) 1`] = `
-{
-  "characterCount": 36093,
-  "characterCountNoSpaces": 35307,
-  "hasImages": false,
-  "hasTables": false,
-  "lineCount": 205,
-  "pageCount": undefined,
-  "paragraphCount": undefined,
-  "wordCount": 770,
-}
-`;
-
-exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.pptx 1`] = `
 {
   "characterCount": 36093,
   "characterCountNoSpaces": 35307,

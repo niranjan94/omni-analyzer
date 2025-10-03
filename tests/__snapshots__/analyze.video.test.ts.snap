@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.avi (video/vnd.avi} 1`] = `
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.avi (video/vnd.avi) 1`] = `
 {
   "audioCodec": "mp3",
   "bitrate": 540558,
@@ -16,7 +16,7 @@ exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.avi (video/vnd.avi}
 }
 `;
 
-exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.flv (video/x-flv} 1`] = `
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.flv (video/x-flv) 1`] = `
 {
   "audioCodec": "mp3",
   "bitrate": 436441,
@@ -32,7 +32,7 @@ exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.flv (video/x-flv} 1
 }
 `;
 
-exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mkv (video/matroska} 1`] = `
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mkv (video/matroska) 1`] = `
 {
   "audioCodec": "aac",
   "bitrate": 598779,
@@ -48,7 +48,7 @@ exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mkv (video/matroska
 }
 `;
 
-exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mov (video/quicktime} 1`] = `
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mov (video/quicktime) 1`] = `
 {
   "audioCodec": "aac",
   "bitrate": 674841,
@@ -64,7 +64,7 @@ exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mov (video/quicktim
 }
 `;
 
-exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mp4 (video/mp4} 1`] = `
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mp4 (video/mp4) 1`] = `
 {
   "audioCodec": "aac",
   "bitrate": 551193,
@@ -80,7 +80,7 @@ exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mp4 (video/mp4} 1`]
 }
 `;
 
-exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mpg (video/MP1S} 1`] = `
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mpg (video/MP1S) 1`] = `
 {
   "audioCodec": "mp2",
   "bitrate": 973158,
@@ -96,7 +96,7 @@ exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.mpg (video/MP1S} 1`
 }
 `;
 
-exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.swf (application/x-shockwave-flash} 1`] = `
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.swf (application/x-shockwave-flash) 1`] = `
 {
   "audioCodec": "mp3",
   "bitrate": NaN,
@@ -112,7 +112,7 @@ exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.swf (application/x-
 }
 `;
 
-exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.webm (video/webm} 1`] = `
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.webm (video/webm) 1`] = `
 {
   "audioCodec": "vorbis",
   "bitrate": 256678,
@@ -128,7 +128,7 @@ exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.webm (video/webm} 1
 }
 `;
 
-exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.wmv (video/x-ms-asf} 1`] = `
+exports[`VideoAnalyzer > VideoAnalyzer: analyzes file sample.wmv (video/x-ms-asf) 1`] = `
 {
   "audioCodec": "wmav2",
   "bitrate": 793695,

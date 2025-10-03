@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.aac 1`] = `
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.aac (audio/aac) 1`] = `
 {
   "album": undefined,
   "artist": undefined,
@@ -14,7 +14,7 @@ exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.aac 1`] = `
 }
 `;
 
-exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.aiff 1`] = `
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.aiff (audio/aiff) 1`] = `
 {
   "album": undefined,
   "artist": undefined,
@@ -28,7 +28,7 @@ exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.aiff 1`] = `
 }
 `;
 
-exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.flac 1`] = `
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.flac (audio/flac) 1`] = `
 {
   "album": undefined,
   "artist": undefined,
@@ -42,7 +42,7 @@ exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.flac 1`] = `
 }
 `;
 
-exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.mka 1`] = `
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.mka (video/matroska) 1`] = `
 {
   "album": undefined,
   "artist": undefined,
@@ -56,7 +56,7 @@ exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.mka 1`] = `
 }
 `;
 
-exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.mp3 1`] = `
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.mp3 (audio/mpeg) 1`] = `
 {
   "album": undefined,
   "artist": undefined,
@@ -70,7 +70,7 @@ exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.mp3 1`] = `
 }
 `;
 
-exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.ogg 1`] = `
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.ogg (audio/ogg) 1`] = `
 {
   "album": undefined,
   "artist": undefined,
@@ -84,7 +84,7 @@ exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.ogg 1`] = `
 }
 `;
 
-exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.wav 1`] = `
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.wav (audio/wav) 1`] = `
 {
   "album": undefined,
   "artist": undefined,
@@ -98,7 +98,7 @@ exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.wav 1`] = `
 }
 `;
 
-exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.wma 1`] = `
+exports[`AudioAnalyzer > AudioAnalyzer: analyzes file sample.wma (audio/x-ms-asf) 1`] = `
 {
   "album": undefined,
   "artist": undefined,

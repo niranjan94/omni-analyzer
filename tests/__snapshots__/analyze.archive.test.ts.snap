@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ArchiveAnalyzer > ArchiveAnalyzer: analyzes file sample.tar (application/x-tar} 1`] = `
+exports[`ArchiveAnalyzer > ArchiveAnalyzer: analyzes file sample.tar (application/x-tar) 1`] = `
 {
   "compressionRatio": 0,
   "fileCount": 6,
@@ -59,7 +59,7 @@ exports[`ArchiveAnalyzer > ArchiveAnalyzer: analyzes file sample.tar (applicatio
 }
 `;
 
-exports[`ArchiveAnalyzer > ArchiveAnalyzer: analyzes file sample.zip (application/zip} 1`] = `
+exports[`ArchiveAnalyzer > ArchiveAnalyzer: analyzes file sample.zip (application/zip) 1`] = `
 {
   "compressionRatio": 0.0884,
   "fileCount": 6,

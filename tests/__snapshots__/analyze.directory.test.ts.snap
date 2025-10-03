@@ -18,11 +18,14 @@ exports[`Directory analysis > analyzes images directory (non-recursive) and snap
   {
     "filename": "image.svg",
     "specific": {
-      "characterCount": 10009,
-      "encoding": "utf-8",
-      "isEmpty": false,
-      "lineCount": 69,
-      "wordCount": 642,
+      "aspectRatio": "1:1",
+      "bitDepth": NaN,
+      "colorSpace": "srgb",
+      "format": "SVG",
+      "hasAlpha": true,
+      "height": 600,
+      "resolution": "600x600",
+      "width": 600,
     },
   },
   {
