@@ -3,7 +3,9 @@
 exports[`Directory analysis > analyzes images directory (non-recursive) and snapshots specific metadata list 1`] = `
 [
   {
+    "extension": "gif",
     "filename": "animated.gif",
+    "mimeType": "image/gif",
     "specific": {
       "aspectRatio": "79:80",
       "bitDepth": NaN,
@@ -16,7 +18,9 @@ exports[`Directory analysis > analyzes images directory (non-recursive) and snap
     },
   },
   {
+    "extension": "svg",
     "filename": "image.svg",
+    "mimeType": "image/svg+xml",
     "specific": {
       "aspectRatio": "1:1",
       "bitDepth": NaN,
@@ -29,7 +33,9 @@ exports[`Directory analysis > analyzes images directory (non-recursive) and snap
     },
   },
   {
+    "extension": "jpg",
     "filename": "progressive.jpg",
+    "mimeType": "image/jpeg",
     "specific": {
       "aspectRatio": "341:486",
       "bitDepth": NaN,
@@ -42,7 +48,9 @@ exports[`Directory analysis > analyzes images directory (non-recursive) and snap
     },
   },
   {
+    "extension": "gif",
     "filename": "sample.gif",
+    "mimeType": "image/gif",
     "specific": {
       "aspectRatio": "1:1",
       "bitDepth": NaN,
@@ -55,7 +63,9 @@ exports[`Directory analysis > analyzes images directory (non-recursive) and snap
     },
   },
   {
+    "extension": "jpg",
     "filename": "sample.jpg",
+    "mimeType": "image/jpeg",
     "specific": {
       "aspectRatio": "218:271",
       "bitDepth": NaN,
@@ -68,7 +78,9 @@ exports[`Directory analysis > analyzes images directory (non-recursive) and snap
     },
   },
   {
+    "extension": "png",
     "filename": "sample.png",
+    "mimeType": "image/png",
     "specific": {
       "aspectRatio": "4:3",
       "bitDepth": NaN,
@@ -81,7 +93,9 @@ exports[`Directory analysis > analyzes images directory (non-recursive) and snap
     },
   },
   {
+    "extension": "tiff",
     "filename": "sample.tiff",
+    "mimeType": "image/tiff",
     "specific": {
       "aspectRatio": "199:47",
       "bitDepth": NaN,
@@ -94,7 +108,9 @@ exports[`Directory analysis > analyzes images directory (non-recursive) and snap
     },
   },
   {
+    "extension": "webp",
     "filename": "sample.webp",
+    "mimeType": "image/webp",
     "specific": {
       "aspectRatio": "275:184",
       "bitDepth": NaN,
@@ -112,7 +128,9 @@ exports[`Directory analysis > analyzes images directory (non-recursive) and snap
 exports[`Directory analysis > analyzes text directory and snapshots metadata list 1`] = `
 [
   {
+    "extension": "dat",
     "filename": "sample.dat",
+    "mimeType": null,
     "specific": {
       "characterCount": 71,
       "characterCountNoSpaces": 56,
@@ -125,7 +143,9 @@ exports[`Directory analysis > analyzes text directory and snapshots metadata lis
     },
   },
   {
+    "extension": "json",
     "filename": "sample.json",
+    "mimeType": null,
     "specific": {
       "characterCount": 606,
       "characterCountNoSpaces": 296,
@@ -138,7 +158,9 @@ exports[`Directory analysis > analyzes text directory and snapshots metadata lis
     },
   },
   {
+    "extension": "txt",
     "filename": "sample.txt",
+    "mimeType": null,
     "specific": {
       "characterCount": 42,
       "characterCountNoSpaces": 33,
@@ -151,7 +173,9 @@ exports[`Directory analysis > analyzes text directory and snapshots metadata lis
     },
   },
   {
+    "extension": "xml",
     "filename": "sample.xml",
+    "mimeType": "application/xml",
     "specific": {
       "characterCount": 4430,
       "encoding": "utf-8",
@@ -161,7 +185,9 @@ exports[`Directory analysis > analyzes text directory and snapshots metadata lis
     },
   },
   {
+    "extension": "xsd",
     "filename": "sample.xsd",
+    "mimeType": null,
     "specific": {
       "characterCount": 913,
       "characterCountNoSpaces": 621,
