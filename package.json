@@ -1,47 +1,52 @@
 {
-	"name": "@zigzi/file-analyzer",
-	"private": true,
-	"version": "1.0.0",
-	"description": "",
-	"type": "module",
-	"scripts": {
-		"build": "rm -rf dist && tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
-		"lint": "biome check",
-		"format": "biome format --write",
-		"test": "vitest"
-	},
-	"exports": {
-		"./*": {
-			"import": "./dist/src/*.js",
-			"types": "./dist/src/*.d.ts"
-		}
-	},
-	"dependencies": {
-		"@file-type/xml": "^0.4.4",
-		"csv-parser": "^3.0.0",
-		"exceljs": "^4.4.0",
-		"file-type": "^21.0.0",
-		"fluent-ffmpeg": "^2.1.2",
-		"mammoth": "^1.6.0",
-		"music-metadata": "^11.9.0",
-		"pdf-parse": "^2.2.6",
-		"pdfjs-dist": "^5.4.296",
-		"sharp": "^0.34.4",
-		"xlsx": "file:vendor/xlsx-0.20.3.tgz",
-		"yauzl": "^3.1.0"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.2.5",
-		"@tsconfig/node22": "^22.0.2",
-		"@types/fluent-ffmpeg": "^2.1.27",
-		"@types/tar-stream": "^3.1.4",
-		"@types/yauzl": "^2.10.3",
-		"@vitest/coverage-v8": "^3.2.4",
-		"tar-stream": "^3.1.7",
-		"tsc-alias": "^1.8.16",
-		"tsx": "^4.20.6",
-		"typescript": "~5.9.3",
-		"vite-tsconfig-paths": "^5.1.4",
-		"vitest": "^3.2.4"
-	}
+  "name": "@zigzi/file-analyzer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist && tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "test": "vitest"
+  },
+  "exports": {
+    "./*": {
+      "import": "./dist/src/*.js",
+      "types": "./dist/src/*.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "vendor"
+  ],
+  "dependencies": {
+    "@file-type/xml": "^0.4.4",
+    "csv-parser": "^3.0.0",
+    "exceljs": "^4.4.0",
+    "file-type": "^21.0.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "mammoth": "^1.6.0",
+    "music-metadata": "^11.9.0",
+    "pdf-parse": "^2.2.6",
+    "pdfjs-dist": "^5.4.296",
+    "sharp": "^0.34.4",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "yauzl": "^3.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.5",
+    "@tsconfig/node22": "^22.0.2",
+    "@types/fluent-ffmpeg": "^2.1.27",
+    "@types/tar-stream": "^3.1.4",
+    "@types/yauzl": "^2.10.3",
+    "@vitest/coverage-v8": "^3.2.4",
+    "tar-stream": "^3.1.7",
+    "tsc-alias": "^1.8.16",
+    "tsx": "^4.20.6",
+    "typescript": "~5.9.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4"
+  }
 }
