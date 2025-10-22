@@ -29,14 +29,14 @@
     "fluent-ffmpeg": "^2.1.2",
     "mammoth": "^1.6.0",
     "music-metadata": "^11.9.0",
-    "pdf-parse": "^2.2.6",
+    "pdf-parse": "^2.4.5",
     "pdfjs-dist": "^5.4.296",
     "sharp": "^0.34.4",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
     "yauzl": "^3.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.5",
+    "@biomejs/biome": "2.2.6",
     "@tsconfig/node22": "^22.0.2",
     "@types/fluent-ffmpeg": "^2.1.27",
     "@types/tar-stream": "^3.1.4",
