@@ -1,5 +1,7 @@
-import { promises as fs } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { createReadStream, promises as fs } from 'node:fs';
 import path from 'node:path';
+import { pipeline } from 'node:stream/promises';
 import { detectXml } from '@file-type/xml';
 import { FileTypeParser } from 'file-type';
 import { FILE_SIZE_UNITS } from '../constants.js';
@@ -35,6 +37,23 @@ export async function detectMimeType(filepath: string): Promise<string | null> {
 }
 
 /**
+ * Calculates the hash of a given file using the specified algorithm.
+ *
+ * @param filePath The path of the file to hash.
+ * @param algorithm The hashing algorithm to use. Defaults to 'sha512'.
+ * @return A promise that resolves to the hexadecimal representation of the file hash.
+ */
+async function calculateFileHash(
+  filePath: string,
+  algorithm: string = 'sha512',
+): Promise<string> {
+  const hash = createHash(algorithm);
+  const input = createReadStream(filePath);
+  await pipeline(input, hash);
+  return hash.digest('hex');
+}
+
+/**
  * Retrieves metadata information for a specified file.
  *
  * @param filepath The full path to the file whose metadata is to be retrieved.
@@ -52,6 +71,7 @@ export async function getFileStats(
     size: stats.size,
     sizeFormatted: formatFileSize(stats.size),
     extension,
+    hash: await calculateFileHash(filepath),
     mimeType: null,
   };
 }

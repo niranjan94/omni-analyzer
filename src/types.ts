@@ -2,6 +2,7 @@ export interface BaseFileMetadata {
   filename: string;
   filepath: string;
   size: number;
+  hash: string;
   sizeFormatted: string;
   extension: string;
   mimeType: string | null;
