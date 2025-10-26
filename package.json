@@ -36,17 +36,17 @@
     "yauzl": "^3.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.6",
+    "@biomejs/biome": "2.3.0",
     "@tsconfig/node22": "^22.0.2",
-    "@types/fluent-ffmpeg": "^2.1.27",
+    "@types/fluent-ffmpeg": "^2.1.28",
     "@types/tar-stream": "^3.1.4",
     "@types/yauzl": "^2.10.3",
-    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/coverage-v8": "^4.0.3",
     "tar-stream": "^3.1.7",
     "tsc-alias": "^1.8.16",
     "tsx": "^4.20.6",
     "typescript": "~5.9.3",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.3"
   }
 }
