@@ -1,4 +1,4 @@
-# File Analyzer
+# Omni Analyzer
 
 A comprehensive TypeScript library for analyzing various file types and extracting detailed metadata. The library supports images, videos, audio files, documents, spreadsheets, archives, and text files with both synchronous and asynchronous processing capabilities.
 
@@ -13,6 +13,8 @@ A comprehensive TypeScript library for analyzing various file types and extracti
 - **Configurable Options**: Flexible configuration for timeouts, file size limits, and analysis depth
 
 ## Installation
+
+> Please note that this package is ESM only
 
 ```bash
 npm install omni-analyzer
