@@ -1,3 +1,6 @@
+[![Build and Test](https://github.com/niranjan94/omni-analyzer/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/niranjan94/omni-analyzer/actions/workflows/build-and-test.yml) [![codecov](https://codecov.io/gh/niranjan94/omni-analyzer/graph/badge.svg?token=VBYUU1C4M9)](https://codecov.io/gh/niranjan94/omni-analyzer) ![NPM Version](https://img.shields.io/npm/v/omni-analyzer)
+
+
 # Omni Analyzer
 
 A comprehensive TypeScript library for analyzing various file types and extracting detailed metadata. The library supports images, videos, audio files, documents, spreadsheets, archives, and text files with both synchronous and asynchronous processing capabilities.
