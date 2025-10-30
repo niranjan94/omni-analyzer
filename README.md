@@ -1,4 +1,4 @@
-[![Build and Test](https://github.com/niranjan94/omni-analyzer/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/niranjan94/omni-analyzer/actions/workflows/build-and-test.yml) [![codecov](https://codecov.io/gh/niranjan94/omni-analyzer/graph/badge.svg?token=VBYUU1C4M9)](https://codecov.io/gh/niranjan94/omni-analyzer) ![NPM Version](https://img.shields.io/npm/v/omni-analyzer)
+[![Build and Test](https://github.com/niranjan94/omni-analyzer/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/niranjan94/omni-analyzer/actions/workflows/build-and-test.yml) [![codecov](https://codecov.io/gh/niranjan94/omni-analyzer/graph/badge.svg?token=VBYUU1C4M9)](https://codecov.io/gh/niranjan94/omni-analyzer) [![NPM Version](https://img.shields.io/npm/v/omni-analyzer)](https://www.npmjs.com/package/omni-analyzer)
 
 
 # Omni Analyzer
