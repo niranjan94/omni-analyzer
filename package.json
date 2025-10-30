@@ -1,7 +1,7 @@
 {
   "name": "omni-analyzer",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
   "license": "MIT",
@@ -13,8 +13,11 @@
     "build": "rm -rf dist && tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "lint": "biome check",
     "format": "biome format --write",
-    "test": "vitest"
+    "test": "vitest",
+    "prepublish": "pnpm run build"
   },
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/src/index.js",
