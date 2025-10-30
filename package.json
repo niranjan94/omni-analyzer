@@ -1,10 +1,14 @@
 {
   "name": "omni-analyzer",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niranjan94/omni-analyzer.git"
+  },
   "scripts": {
     "build": "rm -rf dist && tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "lint": "biome check",
@@ -12,6 +16,10 @@
     "test": "vitest"
   },
   "exports": {
+    ".": {
+      "import": "./dist/src/index.js",
+      "types": "./dist/src/index.d.ts"
+    },
     "./*": {
       "import": "./dist/src/*.js",
       "types": "./dist/src/*.d.ts"
