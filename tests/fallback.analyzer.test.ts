@@ -19,4 +19,3 @@ describe('FallbackAnalyzer', () => {
     expect(analyzer.canHandle('*/*')).toBe(true);
   });
 });
-

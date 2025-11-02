@@ -52,6 +52,7 @@ export interface SpreadsheetMetadata {
   sheetCount: number;
   sheets: SheetInfo[];
   hasFormulas: boolean;
+  data?: string[][][]; // multidimensional array of strings data[sheetIndex][rowIndex][columnIndex]
 }
 
 export interface SheetInfo {
@@ -73,6 +74,7 @@ export interface DocumentMetadata {
   title?: string;
   hasImages?: boolean;
   hasTables?: boolean;
+  text?: string;
 }
 
 export interface TextMetadata {
@@ -82,6 +84,7 @@ export interface TextMetadata {
   encoding: string;
   language?: string;
   isEmpty: boolean;
+  text?: string;
 }
 
 export interface ArchiveMetadata {
@@ -117,10 +120,8 @@ export interface FileAnalysisResult {
 export interface AnalyzerOptions {
   maxFileSize?: number; // Max file size to analyze (bytes)
   timeout?: number; // Analysis timeout (ms)
-  skipContent?: boolean; // Only get basic metadata
   sampleSize?: number; // For CSV/text files, how many rows to sample
-  extractText?: boolean; // For documents, extract full text
-  deepAnalysis?: boolean; // More thorough but slower analysis;
+  extractData?: boolean; // For spreadsheets, documents & text, extract full data and return
   failSilent?: boolean; // Don't throw errors for unsupported types'
 }
 

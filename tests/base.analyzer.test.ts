@@ -49,7 +49,9 @@ describe('BaseAnalyzer', () => {
   it('throws error for directory', async () => {
     const analyzer = new TestAnalyzer();
     const dirpath = dataPath('text');
-    await expect(analyzer['validateFile'](dirpath)).rejects.toThrow('Not a file');
+    await expect(analyzer['validateFile'](dirpath)).rejects.toThrow(
+      'Not a file',
+    );
   });
 
   it('throws error for non-existent file', async () => {
@@ -66,8 +68,12 @@ describe('BaseAnalyzer', () => {
 
   it('wraps unknown errors in FileAnalyzerError', () => {
     const analyzer = new TestAnalyzer();
-    expect(() => analyzer['handleError']('string error')).toThrow(FileAnalyzerError);
-    expect(() => analyzer['handleError']('string error')).toThrow('Unknown error');
+    expect(() => analyzer['handleError']('string error')).toThrow(
+      FileAnalyzerError,
+    );
+    expect(() => analyzer['handleError']('string error')).toThrow(
+      'Unknown error',
+    );
   });
 
   it('wraps null/undefined errors', () => {
@@ -76,4 +82,3 @@ describe('BaseAnalyzer', () => {
     expect(() => analyzer['handleError'](undefined)).toThrow(FileAnalyzerError);
   });
 });
-

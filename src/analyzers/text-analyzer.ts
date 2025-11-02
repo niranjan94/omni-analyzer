@@ -46,15 +46,18 @@ export class TextAnalyzer extends BaseAnalyzer {
     let wordCount = 0;
     let charCount = 0;
 
-    if (!merged.skipContent) {
-      const rl = readline.createInterface({
-        input: createReadStream(filepath),
-      });
-      for await (const line of rl) {
-        lineCount += 1;
-        charCount += line.length + 1; // include newline
-        // simple word split on whitespace
-        wordCount += (line.trim().match(/\S+/g) || []).length;
+    const dataLines: string[] = [];
+
+    const rl = readline.createInterface({
+      input: createReadStream(filepath),
+    });
+    for await (const line of rl) {
+      lineCount += 1;
+      charCount += line.length + 1; // include newline
+      // simple word split on whitespace
+      wordCount += (line.trim().match(/\S+/g) || []).length;
+      if (merged?.extractData) {
+        dataLines.push(line);
       }
     }
 
@@ -64,6 +67,7 @@ export class TextAnalyzer extends BaseAnalyzer {
       characterCount: charCount,
       encoding,
       isEmpty: lineCount === 0 && charCount === 0,
+      text: merged?.extractData ? dataLines.join('\n') : undefined,
     };
   }
 

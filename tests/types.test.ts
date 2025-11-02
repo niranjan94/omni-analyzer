@@ -58,4 +58,3 @@ describe('Error Classes', () => {
     });
   });
 });
-

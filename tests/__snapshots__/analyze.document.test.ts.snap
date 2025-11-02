@@ -23,6 +23,9 @@ exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.docx (applica
   "lineCount": 3,
   "pageCount": undefined,
   "paragraphCount": undefined,
+  "text": "This is a test
+
+",
   "title": undefined,
   "wordCount": 4,
 }
@@ -64,6 +67,8 @@ exports[`DocumentAnalyzer > DocumentAnalyzer: analyzes file sample.pdf (applicat
   "lineCount": undefined,
   "pageCount": 1,
   "paragraphCount": undefined,
+  "text": "
+",
   "title": "hat",
   "wordCount": 0,
 }

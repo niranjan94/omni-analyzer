@@ -1,5 +1,5 @@
-import { describe } from "vitest";
-import { TextAnalyzer } from "@/analyzers/text-analyzer.js";
-import { testAnalyzer } from "@/tests/base.js";
+import { describe } from 'vitest';
+import { TextAnalyzer } from '@/analyzers/text-analyzer.js';
+import { testAnalyzer } from '@/tests/base.js';
 
-describe("TextAnalyzer", () => testAnalyzer(new TextAnalyzer(), "text"));
+describe('TextAnalyzer', () => testAnalyzer(new TextAnalyzer(), 'text'));

@@ -53,6 +53,7 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
     let rowCount = 0;
     let columnCount = 0;
     let columns: string[] = [];
+    const data: string[][] = [];
     const sampleLimit = opts.sampleSize ?? SIZE_LIMITS.CSV_SAMPLE_SIZE;
 
     await withTimeout(
@@ -63,11 +64,12 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
           .on('headers', (hdrs: string[]) => {
             columns = hdrs;
             columnCount = hdrs.length;
+            data.push(hdrs);
           })
-          .on('data', () => {
+          .on('data', (da) => {
             rowCount++;
-            if (rowCount >= sampleLimit && opts.skipContent) {
-              stream.destroy();
+            if (opts.extractData || rowCount <= sampleLimit) {
+              data.push(da);
             }
           })
           .on('error', (err) => reject(err))
@@ -93,6 +95,7 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
       sheetCount: 1,
       sheets,
       hasFormulas: false,
+      data: opts.extractData || sampleLimit > 0 ? [data] : undefined,
     };
   }
 
@@ -137,6 +140,7 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
     let totalRows = 0;
     let maxCols = 0;
     const sampleLimit = opts.sampleSize ?? SIZE_LIMITS.EXCEL_SAMPLE_SIZE;
+    const data: string[][][] = [];
 
     wb.SheetNames.forEach((sheetName) => {
       const ws = wb.Sheets[sheetName];
@@ -145,6 +149,7 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
         return;
       }
 
+      const sheetData: string[][] = [];
       const range = XLSX.utils.decode_range(ws['!ref']);
 
       const columns = XLSX.utils.sheet_to_json(ws, {
@@ -153,11 +158,29 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
       })[0] as string[];
       const colsCount = columns?.length || 0;
 
-      let rows = range.e.r - range.s.r + 1;
-      if (opts.skipContent) {
-        rows = Math.min(rows, sampleLimit);
+      if (sampleLimit > 0 || opts.extractData) {
+        // loop through all data
+        for (let r = range.s.r; r <= range.e.r; r++) {
+          const row: string[] = [];
+          for (let c = range.s.c; c <= range.e.c; c++) {
+            const cell = ws[XLSX.utils.encode_cell({ r, c })];
+            if (cell) {
+              const cellValue = cell.v;
+              if (cellValue !== null && cellValue !== undefined) {
+                row.push(cellValue.toString());
+              }
+            }
+          }
+          sheetData.push(row);
+          // Skip data if not needed
+          if (!opts.extractData && sheetData.length >= sampleLimit) {
+            break;
+          }
+        }
       }
 
+      const rows = range.e.r - range.s.r + 1;
+      data.push(sheetData);
       sheets.push({
         name: sheetName,
         rowCount: rows,
@@ -174,6 +197,7 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
       columns: sheets[0]?.columns || [],
       sheetCount: sheets.length,
       sheets,
+      data: opts.extractData || sampleLimit > 0 ? data : undefined,
       hasFormulas: false, // Skipped for performance
     };
   }
@@ -196,6 +220,7 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
     let totalRows = 0;
     let maxCols = 0;
     const sampleLimit = opts.sampleSize ?? SIZE_LIMITS.EXCEL_SAMPLE_SIZE;
+    const data: string[][][] = [];
 
     await withTimeout(
       new Promise<void>((resolve, reject) => {
@@ -205,26 +230,40 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
           .then(async () => {
             wb.eachSheet((ws) => {
               let rows = 0;
-              let columns: string[] = [];
+              const columns: string[] = [];
               let colsCount = 0;
+              const sheetData: string[][] = [];
 
               ws.eachRow({ includeEmpty: false }, (row, rowNumber) => {
                 rows++;
+
+                if (opts.extractData || rows <= sampleLimit) {
+                  const rowValues: string[] = [];
+                  row.eachCell({ includeEmpty: false }, (cell) => {
+                    const cellValue = cell.value;
+                    if (cellValue !== null && cellValue !== undefined) {
+                      rowValues.push(cellValue.toString());
+                    }
+                  });
+                  sheetData.push(rowValues);
+                }
+
                 if (rowNumber === 1) {
-                  columns = (
-                    typeof row.values?.slice === 'function'
-                      ? row.values?.slice?.(1)
-                      : row.values?.slice
-                        ? [row.values.slice]
-                        : []
-                  ) as string[];
+                  const columns: string[] = [];
+                  row.eachCell({ includeEmpty: false }, (cell) => {
+                    const cellValue = cell.value;
+                    if (cellValue !== null && cellValue !== undefined) {
+                      columns.push(cellValue.toString());
+                    }
+                  });
+
                   colsCount = columns.length;
                 } else {
                   colsCount = Math.max(colsCount, row.cellCount || 0);
                 }
-                if (opts.skipContent && rows >= sampleLimit) return;
               });
 
+              data.push(sheetData);
               sheets.push({
                 name: ws.name,
                 rowCount: rows,
@@ -247,6 +286,7 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
       columns: sheets[0]?.columns || [],
       sheetCount: sheets.length,
       sheets,
+      data: opts.extractData || sampleLimit > 0 ? data : undefined,
       hasFormulas: false, // Skipped for performance
     };
   }

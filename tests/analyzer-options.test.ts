@@ -1,9 +1,9 @@
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { TextAnalyzer } from '@/analyzers/text-analyzer.js';
 import { AudioAnalyzer } from '@/analyzers/audio-analyzer.js';
-import { VideoAnalyzer } from '@/analyzers/video-analyzer.js';
 import { ImageAnalyzer } from '@/analyzers/image-analyzer.js';
+import { TextAnalyzer } from '@/analyzers/text-analyzer.js';
+import { VideoAnalyzer } from '@/analyzers/video-analyzer.js';
 
 function dataPath(...p: string[]) {
   return path.join(import.meta.dirname, 'data', ...p);
@@ -15,21 +15,24 @@ describe('Analyzer Options Coverage', () => {
 
     it('skips content when skipContent is true', async () => {
       const filepath = dataPath('text', 'sample.txt');
-      const result = await analyzer.analyze(filepath, { skipContent: true });
+      const result = await analyzer.analyze(filepath, { extractData: true });
 
-      expect(result.lineCount).toBe(0);
-      expect(result.wordCount).toBe(0);
-      expect(result.characterCount).toBe(0);
+      expect(result.text).toBeDefined();
+      expect(result.lineCount).toBe(2);
+      expect(result.wordCount).toBe(10);
+      expect(result.characterCount).toBe(43);
       expect(result.encoding).toBeDefined();
     });
 
     it('analyzes content when skipContent is false', async () => {
       const filepath = dataPath('text', 'sample.txt');
-      const result = await analyzer.analyze(filepath, { skipContent: false });
+      const result = await analyzer.analyze(filepath, { extractData: false });
 
-      expect(result.lineCount).toBeGreaterThan(0);
-      expect(result.wordCount).toBeGreaterThan(0);
-      expect(result.characterCount).toBeGreaterThan(0);
+      expect(result.text).toBeUndefined();
+      expect(result.lineCount).toBe(2);
+      expect(result.wordCount).toBe(10);
+      expect(result.characterCount).toBe(43);
+      expect(result.encoding).toBeDefined();
     });
 
     it('detects UTF-8 encoding', async () => {
@@ -169,4 +172,3 @@ describe('Analyzer Options Coverage', () => {
     });
   });
 });
-

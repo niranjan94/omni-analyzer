@@ -10,10 +10,10 @@ describe('DocumentAnalyzer - Additional Coverage', () => {
   const analyzer = new DocumentAnalyzer();
 
   describe('PDF analysis with options', () => {
-    it('analyzes PDF with extractText enabled', async () => {
+    it('analyzes PDF with extractData enabled', async () => {
       const filepath = dataPath('documents', 'sample.pdf');
       const result = await analyzer.analyze(filepath, {
-        extractText: true
+        extractData: true,
       });
 
       expect(result.pageCount).toBeGreaterThan(0);
@@ -21,15 +21,15 @@ describe('DocumentAnalyzer - Additional Coverage', () => {
       expect(result.characterCount).toBeGreaterThanOrEqual(0);
     });
 
-    it('analyzes PDF without extractText', async () => {
+    it('analyzes PDF without extractData', async () => {
       const filepath = dataPath('documents', 'sample.pdf');
       const result = await analyzer.analyze(filepath, {
-        extractText: false
+        extractData: false,
       });
 
       expect(result.pageCount).toBeGreaterThan(0);
       expect(result.wordCount).toBe(0); // No text extracted
-      expect(result.characterCount).toBe(0);
+      expect(result.characterCount).toBe(1);
     });
   });
 
@@ -104,7 +104,7 @@ describe('DocumentAnalyzer - Additional Coverage', () => {
       try {
         await analyzer.analyze(filepath, {
           timeout: 10000, // 10 seconds should be enough
-          extractText: true
+          extractData: true,
         });
         const elapsed = Date.now() - start;
         expect(elapsed).toBeLessThan(10000);
@@ -137,4 +137,3 @@ describe('DocumentAnalyzer - Additional Coverage', () => {
     });
   });
 });
-

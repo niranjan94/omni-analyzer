@@ -27,7 +27,7 @@ describe('ArchiveAnalyzer - Extended Coverage', () => {
       const result = await analyzer.analyze(filepath);
 
       expect(result.files.length).toBeGreaterThan(0);
-      result.files.forEach(file => {
+      result.files.forEach((file) => {
         expect(file.path).toBeDefined();
         expect(file.size).toBeGreaterThanOrEqual(0);
         expect(file.compressedSize).toBeGreaterThanOrEqual(0);
@@ -68,7 +68,7 @@ describe('ArchiveAnalyzer - Extended Coverage', () => {
       const filepath = dataPath('archives', 'sample.tar');
       const result = await analyzer.analyze(filepath);
 
-      result.files.forEach(file => {
+      result.files.forEach((file) => {
         expect(file.path).toBeDefined();
         expect(file.size).toBeGreaterThanOrEqual(0);
         expect(file.compressedSize).toBeGreaterThanOrEqual(0);
@@ -81,7 +81,7 @@ describe('ArchiveAnalyzer - Extended Coverage', () => {
       const result = await analyzer.analyze(filepath);
 
       // Check if any directories are detected
-      const hasDirectories = result.files.some(f => f.isDirectory);
+      const hasDirectories = result.files.some((f) => f.isDirectory);
       // This depends on the sample file content
       expect(typeof hasDirectories).toBe('boolean');
     });
@@ -114,7 +114,7 @@ describe('ArchiveAnalyzer - Extended Coverage', () => {
       const filepath = dataPath('archives', 'sample.zip');
       const result = await analyzer.analyze(filepath);
 
-      const actualFileCount = result.files.filter(f => !f.isDirectory).length;
+      const actualFileCount = result.files.filter((f) => !f.isDirectory).length;
       expect(result.fileCount).toBe(actualFileCount);
     });
 
@@ -122,7 +122,7 @@ describe('ArchiveAnalyzer - Extended Coverage', () => {
       const filepath = dataPath('archives', 'sample.tar');
       const result = await analyzer.analyze(filepath);
 
-      const actualFileCount = result.files.filter(f => !f.isDirectory).length;
+      const actualFileCount = result.files.filter((f) => !f.isDirectory).length;
       expect(result.fileCount).toBe(actualFileCount);
     });
   });
@@ -133,7 +133,7 @@ describe('ArchiveAnalyzer - Extended Coverage', () => {
       const result = await analyzer.analyze(filepath);
 
       const calculatedSize = result.files
-        .filter(f => !f.isDirectory)
+        .filter((f) => !f.isDirectory)
         .reduce((sum, f) => sum + f.size, 0);
       expect(result.uncompressedSize).toBe(calculatedSize);
     });
@@ -143,10 +143,9 @@ describe('ArchiveAnalyzer - Extended Coverage', () => {
       const result = await analyzer.analyze(filepath);
 
       const calculatedSize = result.files
-        .filter(f => !f.isDirectory)
+        .filter((f) => !f.isDirectory)
         .reduce((sum, f) => sum + f.size, 0);
       expect(result.uncompressedSize).toBe(calculatedSize);
     });
   });
 });
-

@@ -12,7 +12,7 @@ describe('SpreadsheetAnalyzer - Options Coverage', () => {
   describe('CSV analysis', () => {
     it('analyzes CSV with full content', async () => {
       const filepath = dataPath('spreadsheets', 'sample.csv');
-      const result = await analyzer.analyze(filepath, { skipContent: false });
+      const result = await analyzer.analyze(filepath, { extractData: true });
 
       expect(result.rowCount).toBeGreaterThan(0);
       expect(result.columnCount).toBeGreaterThan(0);
@@ -39,8 +39,8 @@ describe('SpreadsheetAnalyzer - Options Coverage', () => {
     it('analyzes XLS with skipContent and sample size', async () => {
       const filepath = dataPath('spreadsheets', 'sample.xls');
       const result = await analyzer.analyze(filepath, {
-        skipContent: true,
-        sampleSize: 10
+        extractData: false,
+        sampleSize: 10,
       });
 
       expect(result.columnCount).toBeGreaterThan(0);
@@ -65,8 +65,8 @@ describe('SpreadsheetAnalyzer - Options Coverage', () => {
     it('analyzes XLSX with skipContent and sample size', async () => {
       const filepath = dataPath('spreadsheets', 'sample.xlsx');
       const result = await analyzer.analyze(filepath, {
-        skipContent: true,
-        sampleSize: 10
+        extractData: false,
+        sampleSize: 10,
       });
 
       expect(result.columnCount).toBeGreaterThan(0);
@@ -113,7 +113,7 @@ describe('SpreadsheetAnalyzer - Options Coverage', () => {
       const result = await analyzer.analyze(filepath);
 
       expect(result.sheets.length).toBe(result.sheetCount);
-      result.sheets.forEach(sheet => {
+      result.sheets.forEach((sheet) => {
         expect(sheet.name).toBeDefined();
         expect(sheet.rowCount).toBeGreaterThanOrEqual(0);
         expect(sheet.columnCount).toBeGreaterThanOrEqual(0);
@@ -122,4 +122,3 @@ describe('SpreadsheetAnalyzer - Options Coverage', () => {
     });
   });
 });
-

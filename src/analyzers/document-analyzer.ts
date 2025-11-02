@@ -143,9 +143,7 @@ export class DocumentAnalyzer extends BaseAnalyzer {
       opts.timeout,
     );
 
-    const text: string = opts.extractText
-      ? (await extractTextWithBetterLayout(data)) || ''
-      : '';
+    const text: string = await extractTextWithBetterLayout(data);
     const words = text ? countWords(text) : 0;
     const chars = text.length;
     const noSpaces = text.replace(/\s+/g, '').length;
@@ -159,6 +157,7 @@ export class DocumentAnalyzer extends BaseAnalyzer {
       characterCountNoSpaces: noSpaces,
       lineCount: undefined,
       paragraphCount: undefined,
+      text: opts.extractData ? text : undefined,
       author:
         metadata?.get('Author') ||
         (info as any)?.Author ||
@@ -194,6 +193,7 @@ export class DocumentAnalyzer extends BaseAnalyzer {
 
     return {
       wordCount: words,
+      text: opts.extractData ? text : undefined,
       characterCount: chars,
       characterCountNoSpaces: noSpaces,
       lineCount: lines,

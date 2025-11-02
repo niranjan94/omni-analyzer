@@ -5,7 +5,10 @@ import { FallbackAnalyzer } from '@/analyzers/fallback-analyzer.js';
 import type { AnalyzerOptions } from '@/types.js';
 
 class CustomTestAnalyzer extends BaseAnalyzer {
-  async analyze(_filepath: string, _options?: AnalyzerOptions): Promise<Record<string, never>> {
+  async analyze(
+    _filepath: string,
+    _options?: AnalyzerOptions,
+  ): Promise<Record<string, never>> {
     return { custom: true as never };
   }
 
@@ -88,4 +91,3 @@ describe('AnalyzerRegistry', () => {
     });
   });
 });
-

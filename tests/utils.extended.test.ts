@@ -230,8 +230,9 @@ describe('Utils Coverage', () => {
     it('throws FileReadError for directory', async () => {
       const dirpath = dataPath('text');
       await expect(validateFilePath(dirpath)).rejects.toThrow(FileReadError);
-      await expect(validateFilePath(dirpath)).rejects.toThrow('Path is not a file');
+      await expect(validateFilePath(dirpath)).rejects.toThrow(
+        'Path is not a file',
+      );
     });
   });
 });
-

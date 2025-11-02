@@ -4,27 +4,59 @@ exports[`SpreadsheetAnalyzer > SpreadsheetAnalyzer: analyzes file sample.csv (te
 {
   "columnCount": 5,
   "columns": [
-    "ID",
-    "Name",
-    "Age",
-    "Country",
-    "Email",
+    "Col 1",
+    "Col 2",
+    "Col 3",
+    "Col 4",
+    "Col 5",
+  ],
+  "data": [
+    [
+      [
+        "Col 1",
+        "Col 2",
+        "Col 3",
+        "Col 4",
+        "Col 5",
+      ],
+      {
+        "Col 1": "1",
+        "Col 2": "2",
+        "Col 3": "3",
+        "Col 4": "4",
+        "Col 5": "5",
+      },
+      {
+        "Col 1": "11",
+        "Col 2": "22",
+        "Col 3": "33",
+        "Col 4": "44",
+        "Col 5": "55",
+      },
+      {
+        "Col 1": "a",
+        "Col 2": "b",
+        "Col 3": "c",
+        "Col 4": "d",
+        "Col 5": "e",
+      },
+    ],
   ],
   "hasFormulas": false,
-  "rowCount": 6,
+  "rowCount": 3,
   "sheetCount": 1,
   "sheets": [
     {
       "columnCount": 5,
       "columns": [
-        "ID",
-        "Name",
-        "Age",
-        "Country",
-        "Email",
+        "Col 1",
+        "Col 2",
+        "Col 3",
+        "Col 4",
+        "Col 5",
       ],
       "name": "CSV",
-      "rowCount": 6,
+      "rowCount": 3,
     },
   ],
 }
@@ -34,6 +66,7 @@ exports[`SpreadsheetAnalyzer > SpreadsheetAnalyzer: analyzes file sample.ods (ap
 {
   "columnCount": 0,
   "columns": [],
+  "data": [],
   "hasFormulas": false,
   "rowCount": 0,
   "sheetCount": 0,
@@ -43,29 +76,125 @@ exports[`SpreadsheetAnalyzer > SpreadsheetAnalyzer: analyzes file sample.ods (ap
 
 exports[`SpreadsheetAnalyzer > SpreadsheetAnalyzer: analyzes file sample.xls (application/vnd.ms-excel) 1`] = `
 {
-  "columnCount": 1,
+  "columnCount": 5,
   "columns": [
-    "This is a test",
+    "Col 1",
+    "Col 2",
+    "Col 3",
+    "Col 4",
+    "Col 5",
+  ],
+  "data": [
+    [
+      [
+        "Col 1",
+        "Col 2",
+        "Col 3",
+        "Col 4",
+        "Col 5",
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+      ],
+      [
+        "11",
+        "22",
+        "33",
+        "44",
+        "55",
+      ],
+      [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+      ],
+    ],
+    [
+      [
+        "Col 1b",
+        "Col 2b",
+        "Col 3b",
+        "Col 4b",
+        "Col 5b",
+      ],
+      [
+        "12",
+        "22",
+        "32",
+        "42",
+        "52",
+      ],
+      [
+        "113",
+        "223",
+        "333",
+        "443",
+        "553",
+      ],
+      [
+        "a2",
+        "b2",
+        "c2",
+        "d2",
+        "e2",
+      ],
+    ],
+    [
+      [
+        "x",
+      ],
+      [
+        "y",
+      ],
+      [
+        "z",
+      ],
+      [
+        "1",
+      ],
+    ],
   ],
   "hasFormulas": false,
-  "rowCount": 2,
-  "sheetCount": 2,
+  "rowCount": 12,
+  "sheetCount": 3,
   "sheets": [
     {
-      "columnCount": 1,
+      "columnCount": 5,
       "columns": [
-        "This is a test",
+        "Col 1",
+        "Col 2",
+        "Col 3",
+        "Col 4",
+        "Col 5",
       ],
       "name": "Sheet1",
-      "rowCount": 1,
+      "rowCount": 4,
+    },
+    {
+      "columnCount": 5,
+      "columns": [
+        "Col 1b",
+        "Col 2b",
+        "Col 3b",
+        "Col 4b",
+        "Col 5b",
+      ],
+      "name": "Sheet2",
+      "rowCount": 4,
     },
     {
       "columnCount": 1,
       "columns": [
-        "This is a test on sheet 2",
+        "x",
       ],
-      "name": "Sheet2",
-      "rowCount": 1,
+      "name": "Sheet3",
+      "rowCount": 4,
     },
   ],
 }
@@ -73,29 +202,105 @@ exports[`SpreadsheetAnalyzer > SpreadsheetAnalyzer: analyzes file sample.xls (ap
 
 exports[`SpreadsheetAnalyzer > SpreadsheetAnalyzer: analyzes file sample.xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) 1`] = `
 {
-  "columnCount": 1,
-  "columns": [
-    "This is a test",
+  "columnCount": 5,
+  "columns": [],
+  "data": [
+    [
+      [
+        "Col 1",
+        "Col 2",
+        "Col 3",
+        "Col 4",
+        "Col 5",
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+      ],
+      [
+        "11",
+        "22",
+        "33",
+        "44",
+        "55",
+      ],
+      [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+      ],
+    ],
+    [
+      [
+        "Col 1b",
+        "Col 2b",
+        "Col 3b",
+        "Col 4b",
+        "Col 5b",
+      ],
+      [
+        "12",
+        "22",
+        "32",
+        "42",
+        "52",
+      ],
+      [
+        "113",
+        "223",
+        "333",
+        "443",
+        "553",
+      ],
+      [
+        "a2",
+        "b2",
+        "c2",
+        "d2",
+        "e2",
+      ],
+    ],
+    [
+      [
+        "x",
+      ],
+      [
+        "y",
+      ],
+      [
+        "z",
+      ],
+      [
+        "1",
+      ],
+    ],
   ],
   "hasFormulas": false,
-  "rowCount": 2,
-  "sheetCount": 2,
+  "rowCount": 12,
+  "sheetCount": 3,
   "sheets": [
     {
-      "columnCount": 1,
-      "columns": [
-        "This is a test",
-      ],
+      "columnCount": 5,
+      "columns": [],
       "name": "Sheet1",
-      "rowCount": 1,
+      "rowCount": 4,
     },
     {
-      "columnCount": 1,
-      "columns": [
-        "This is a test on sheet 2",
-      ],
+      "columnCount": 5,
+      "columns": [],
       "name": "Sheet2",
-      "rowCount": 1,
+      "rowCount": 4,
+    },
+    {
+      "columnCount": 4,
+      "columns": [],
+      "name": "Sheet3",
+      "rowCount": 4,
     },
   ],
 }
