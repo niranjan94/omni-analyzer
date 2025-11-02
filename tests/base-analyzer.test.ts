@@ -43,42 +43,38 @@ describe('BaseAnalyzer', () => {
   it('validates a valid file', async () => {
     const analyzer = new TestAnalyzer();
     const filepath = dataPath('text', 'sample.txt');
-    await expect(analyzer['validateFile'](filepath)).resolves.toBeUndefined();
+    await expect(analyzer.validateFile(filepath)).resolves.toBeUndefined();
   });
 
   it('throws error for directory', async () => {
     const analyzer = new TestAnalyzer();
     const dirpath = dataPath('text');
-    await expect(analyzer['validateFile'](dirpath)).rejects.toThrow(
-      'Not a file',
-    );
+    await expect(analyzer.validateFile(dirpath)).rejects.toThrow('Not a file');
   });
 
   it('throws error for non-existent file', async () => {
     const analyzer = new TestAnalyzer();
     const filepath = dataPath('non-existent-file.txt');
-    await expect(analyzer['validateFile'](filepath)).rejects.toThrow();
+    await expect(analyzer.validateFile(filepath)).rejects.toThrow();
   });
 
   it('rethrows Error instances', () => {
     const analyzer = new TestAnalyzer();
     const error = new Error('Test error');
-    expect(() => analyzer['handleError'](error)).toThrow('Test error');
+    expect(() => analyzer.handleError(error)).toThrow('Test error');
   });
 
   it('wraps unknown errors in FileAnalyzerError', () => {
     const analyzer = new TestAnalyzer();
-    expect(() => analyzer['handleError']('string error')).toThrow(
+    expect(() => analyzer.handleError('string error')).toThrow(
       FileAnalyzerError,
     );
-    expect(() => analyzer['handleError']('string error')).toThrow(
-      'Unknown error',
-    );
+    expect(() => analyzer.handleError('string error')).toThrow('Unknown error');
   });
 
   it('wraps null/undefined errors', () => {
     const analyzer = new TestAnalyzer();
-    expect(() => analyzer['handleError'](null)).toThrow(FileAnalyzerError);
-    expect(() => analyzer['handleError'](undefined)).toThrow(FileAnalyzerError);
+    expect(() => analyzer.handleError(null)).toThrow(FileAnalyzerError);
+    expect(() => analyzer.handleError(undefined)).toThrow(FileAnalyzerError);
   });
 });

@@ -439,20 +439,20 @@ The library uses several specialized packages for different file types:
 ### Building
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ### Testing
 
 ```bash
-npm test
+pnpm test
 ```
 
 ### Linting
 
 ```bash
-npm run lint
-npm run format
+pnpm run lint
+pnpm run format
 ```
 
 ## Contributing
@@ -461,8 +461,8 @@ Contributions are welcome! Please follow these guidelines:
 
 1. **Fork the repository** and create your branch from `main`
 2. **Write tests** for any new features or bug fixes
-3. **Ensure tests pass** by running `npm test`
-4. **Follow the existing code style** and run `npm run format`
+3. **Ensure tests pass** by running `pnpm test`
+4. **Follow the existing code style** and run `pnpm run format`
 5. **Update documentation** if you're adding new features
 6. **Submit a pull request** with a clear description of your changes
 
@@ -485,13 +485,13 @@ git clone https://github.com/niranjan94/omni-analyzer.git
 cd omni-analyzer
 
 # Install dependencies
-npm install
+pnpm install
 
-# Run tests in watch mode
-npm test -- --watch
+# Run tests
+pnpm test
 
 # Build the project
-npm run build
+pnpm build
 ```
 
 ## License

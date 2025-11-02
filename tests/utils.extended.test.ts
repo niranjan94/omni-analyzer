@@ -1,5 +1,6 @@
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
+import { AnalysisTimeoutError, FileReadError } from '@/types.js';
 import { withTimeout } from '@/utils/async-utils.js';
 import {
   calculateAspectRatio,
@@ -11,7 +12,6 @@ import {
   isFileSizeValid,
   validateFilePath,
 } from '@/utils/file-utils.js';
-import { AnalysisTimeoutError, FileReadError } from '@/types.js';
 
 function dataPath(...p: string[]) {
   return path.join(import.meta.dirname, 'data', ...p);

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { AnalyzerRegistry } from '@/registry/analyzer-registry.js';
 import { BaseAnalyzer } from '@/analyzers/base-analyzer.js';
 import { FallbackAnalyzer } from '@/analyzers/fallback-analyzer.js';
+import { AnalyzerRegistry } from '@/registry/analyzer-registry.js';
 import type { AnalyzerOptions } from '@/types.js';
 
 class CustomTestAnalyzer extends BaseAnalyzer {
