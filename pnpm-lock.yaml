@@ -11,9 +11,9 @@ importers:
       '@file-type/xml':
         specifier: ^0.4.4
         version: 0.4.4
-      csv-parser:
-        specifier: ^3.0.0
-        version: 3.2.0
+      csv-parse:
+        specifier: ^6.1.0
+        version: 6.1.0
       exceljs:
         specifier: ^4.4.0
         version: 4.4.0
@@ -934,10 +934,8 @@ packages:
     resolution: {integrity: sha512-NT7w2JVU7DFroFdYkeq8cywxrgjPHWkdX1wjpRQXPX5Asews3tA+Ght6lddQO5Mkumffp3X7GEqku3epj2toIw==}
     engines: {node: '>= 10'}
 
-  csv-parser@3.2.0:
-    resolution: {integrity: sha512-fgKbp+AJbn1h2dcAHKIdKNSSjfp43BZZykXsCjzALjKy80VXQNHPFJ6T9Afwdzoj24aMkq8GwDS7KGcDPpejrA==}
-    engines: {node: '>= 10'}
-    hasBin: true
+  csv-parse@6.1.0:
+    resolution: {integrity: sha512-CEE+jwpgLn+MmtCpVcPtiCZpVtB6Z2OKPTr34pycYYoL7sxdOkXDdQ4lRiw6ioC0q6BLqhc6cKweCVvral8yhw==}
 
   dayjs@1.11.18:
     resolution: {integrity: sha512-zFBQ7WFRvVRhKcWoUh+ZA1g2HVgUbsZm9sbddh8EC5iv93sui8DVVz1Npvz+r6meo9VKfa8NyLWBsQK1VvIKPA==}
@@ -2282,7 +2280,7 @@ snapshots:
       crc-32: 1.2.2
       readable-stream: 3.6.2
 
-  csv-parser@3.2.0: {}
+  csv-parse@6.1.0: {}
 
   dayjs@1.11.18: {}
 

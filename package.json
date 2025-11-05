@@ -1,7 +1,7 @@
 {
   "name": "omni-analyzer",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "type": "module",
   "license": "MIT",
@@ -35,7 +35,7 @@
   ],
   "dependencies": {
     "@file-type/xml": "^0.4.4",
-    "csv-parser": "^3.0.0",
+    "csv-parse": "^6.1.0",
     "exceljs": "^4.4.0",
     "file-type": "^21.0.0",
     "fluent-ffmpeg": "^2.1.2",

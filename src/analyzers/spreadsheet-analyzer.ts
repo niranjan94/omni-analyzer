@@ -1,7 +1,7 @@
 import * as fs from 'node:fs';
 import path from 'node:path';
 import { Readable } from 'node:stream';
-import csvParser from 'csv-parser';
+import { parse as parseCsv } from 'csv-parse';
 import { default as exceljs } from 'exceljs';
 import * as XLSX from 'xlsx';
 import * as cpexcel from 'xlsx/dist/cpexcel.full.mjs';
@@ -51,30 +51,34 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
   ): Promise<SpreadsheetMetadata> {
     // Use csv-parser streaming
     let rowCount = 0;
-    let columnCount = 0;
-    let columns: string[] = [];
+    let recordCount = 0;
+    const columns: string[] = [];
     const data: string[][] = [];
     const sampleLimit = opts.sampleSize ?? SIZE_LIMITS.CSV_SAMPLE_SIZE;
 
     await withTimeout(
       new Promise<void>((resolve, reject) => {
         const stream = fs.createReadStream(filepath);
-        stream
-          .pipe(csvParser())
-          .on('headers', (hdrs: string[]) => {
-            columns = hdrs;
-            columnCount = hdrs.length;
-            data.push(hdrs);
-          })
-          .on('data', (da) => {
-            rowCount++;
-            if (opts.extractData || rowCount <= sampleLimit) {
-              data.push(da);
+        const parser = parseCsv({})
+          .on('readable', () => {
+            let record = parser.read() as string[] | null;
+            while (record !== null) {
+              if (recordCount === 0) {
+                columns.push(...record);
+              } else {
+                rowCount++;
+                if (opts.extractData || rowCount <= sampleLimit) {
+                  data.push(record);
+                }
+              }
+              recordCount += 1;
+              record = parser.read();
             }
           })
-          .on('error', (err) => reject(err))
-          .on('close', () => resolve())
-          .on('end', () => resolve());
+          .on('end', () => resolve())
+          .on('error', (err) => reject(err));
+
+        stream.pipe(parser);
       }),
       opts.timeout,
     );
@@ -83,14 +87,14 @@ export class SpreadsheetAnalyzer extends BaseAnalyzer {
       {
         name: 'CSV',
         rowCount,
-        columnCount,
+        columnCount: columns.length,
         columns,
       },
     ];
 
     return {
       rowCount,
-      columnCount,
+      columnCount: columns.length,
       columns,
       sheetCount: 1,
       sheets,

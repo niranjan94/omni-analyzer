@@ -431,7 +431,7 @@ The library uses several specialized packages for different file types:
 - **pdf-parse**: PDF document parsing
 - **mammoth**: Word document processing
 - **exceljs**: Excel file analysis
-- **csv-parser**: CSV file parsing
+- **csv-parse**: CSV file parsing
 - **yauzl**: Archive file extraction
 
 ## Development
